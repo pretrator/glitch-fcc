@@ -15,6 +15,6 @@ app.get("/api", function(request, response) {
     response.send("Chall raha hai bhosadike")
 });
 // listen for requests :)
-const listener = app.listen(80, function() {
+const listener = app.listen(process.env.PORT, function() {
   console.log("Your app is listening on port ");
 });
